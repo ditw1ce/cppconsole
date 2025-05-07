@@ -17,7 +17,7 @@ std::vector<Participant> read_data(const std::string& filename) {
         std::getline(iss, p.club);
         p.club = p.club.substr(p.club.find_first_not_of(' '));
 
-        // Конвертация времени
+        
         auto time_to_seconds = [](const std::string& time) {
             int h, m, s;
             char colon;
